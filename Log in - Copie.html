@@ -1,0 +1,66 @@
+<script src="js/modernizr.js"></script>
+  <script src="js/pace.min.js"></script>
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+
+<!-- The Modal -->
+<div id="id01" class="modal1995">
+  <!-- Modal Content -->
+  <form style="height: 500px;width: 500px" class="" >
+    
+    <div>
+    <label style="position: absolute;top: 22%;left: 40%"><b>Username</b></label>
+      <input id="emailzone" type="text" placeholder="Enter Username" name="uname" style="position: absolute;top:20%;left: 50%" required >
+
+      <label style="position: absolute;top: 32%;left: 40%"><b>Password</b></label>
+      <input id="passwordzone" type="password" placeholder="Enter Password" name="psw" style="position: absolute;top:30%;left: 50%" required>
+
+      <button id="logbutton"  style="position: absolute;top: 57%;left: 40%" >Log in</button>
+      <button id="signbutton"  style="position: absolute;top: 65%;left: 46%" >Sign up</button>
+      <button id="logoutbutton"  style="position: absolute;top: 65%;left: 50%" >Log out</button>
+      <input style="position: absolute;top: 45%;left: 55%" type="checkbox" checked="checked"> 
+      <label style="position: absolute;top: 44%;left: 45%"><b>Remember me</b></label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button id="cancelbt" style="position: absolute;top: 57%;left: 51%" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span style="position: absolute;top: 49%;left: 45%" class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script src="C:/Users/faouzi/Desktop/Code/FirebaseTest2.js"></script>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<script>
+                  var email= document.getElementById('emailzone');
+                  var pass= document.getElementById('passwordzone');
+                  var log = document.getElementById('logbutton');
+                  var signin = document.getElementById('signbutton');
+                  var logout = document.getElementById('logoutbutton');
+                  var cancelbt = document.getElementById('cancelbt');
+                  var log=document.getElementById('mybu');
+                  log.addEventListener('click', e=>{
+                    document.getElementById('id01').style.display='block'
+                    email.classList.remove('hide');
+                    pass.classList.remove('hide');
+                    log.classList.remove('hide');
+                    signin.classList.remove('hide');
+                    log.classList.add('smoothscroll','button','stroke');
+                    cancelbt.classList.add('smoothscroll','button','stroke');
+                    signin.classList.add('smoothscroll','button','stroke');
+                    logout.classList.remove('smoothscroll','button','stroke');
+                    logout.classList.add('hide');
+    });
+                    
+                  
+                </script>
