@@ -30,6 +30,7 @@
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
 	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
 
    <!-- favicons
 	================================================== -->
@@ -40,7 +41,9 @@
 
 <body id="top">
 
-	<!-- header
+
+	<!-- header 
+
    ================================================== -->
    <header>
 
@@ -64,11 +67,12 @@
 
 			<ul class="nav-list">
 				<li class="current"><a class="smoothscroll" href="#home" title="">Home</a></li>
-				<li><a class="smoothscroll" href="#about" title="">About us</a></li>
-				<li><a class="smoothscroll" href="#services" title="">Contenus</a></li>
-				<li><a class="smoothscroll" href="#portfolio" title="">Videos</a></li>
-				<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
-			</ul>
+
+				<li><a class="smoothscroll" href="#about" title="">About Fahemni</a></li>
+				<li><a class="smoothscroll" href="#services" title="">Content</a></li>
+				<li><a class="smoothscroll" href="#portfolio" title="">Categories</a></li>
+				<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>						
+			</ul>	
 
 			<p class="sponsor-text">
 				Choose the level or the domain that you want
@@ -99,6 +103,7 @@
 
    <!-- home
    ================================================== -->
+   
    <section id="home">
 
 
@@ -106,20 +111,21 @@
 					<script src="jsparticles/particles.js"></script>
 					<script src="jsparticles/demo/js/app.js"></script></div>
 
-   	<div  class="home-content-table">
 
-	<!-- home
-   <canvas width="900" height="900" z-index="1" position="relative">
-	</canvas>================================================== -->
-
+   	<div  class="home-content-table">	
+	
+	<!-- home================================================== -->
+		   
 		   <div  class="home-content-tablecell" >
 
-
+			
+<!-- Button to open the modal login form -->
 
 		   	<div class="row">
 		   		<div class="col-twelve">
 			  				<h3 class="animate-intro">e-learning by, and for students, brought by</h3>
 				  			<h1 class="animate-intro">Fahemni</h1>
+
 
 				  			<div class="more animate-intro">
 				  				<a style="margin-right: 20px;width: 150px " class="smoothscroll button stroke" href="./login.php" onclick="location.href='./login.php'">
@@ -133,6 +139,7 @@
 			  		</div> <!-- end col-twelve -->
 		   	</div> <!-- end row -->
 		   </div> <!-- end home-content-tablecell -->
+
 		</div> <!-- end home-content-table -->
 
 		<ul class="home-social-list">
@@ -175,10 +182,12 @@
    			<div class="about-profile-bg"></div>
 
 				<div class="intro">
-					<h3 class="animate-this">About Us</h3>
+
+					<h3 class="animate-this">About our project</h3>
 	   			<p class="lead animate-this"> <span>Fahemni, c'est quoi?</span></p>
 	   			<p class="lead animate-this"> C'est une plateforme qui permet le partage de connaissance et de savoir à travers des vidéos, par des étudiants (mais pas que!) pour des étudiants.</p>
 				</div>
+
 
    		</div> <!-- end col-full  -->
   	</div> <!-- end about-wrap  -->
@@ -199,6 +208,7 @@
    				<h3>Contenus</h3>
    			   <h1>Apprendre plus facilement.</h1>
 
+
    			   <p class="lead">Lorem ipsum Elit ut consequat veniam eu nulla nulla reprehenderit reprehenderit sit velit in cupidatat ex aliquip ut cupidatat Excepteur tempor id irure sed dolore sint sunt voluptate.</p>
 
    	   </div> <!-- end col-full -->
@@ -213,7 +223,7 @@
 	      		<span class="icon"><i class="icon-calculator"></i></span>
 
 	            <div class="service-content">
-	            	<h3 class="h05">Mathematiques</h3>
+	            	<h3 class="h05">Mathematics</h3>
 
 		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
 	         		</p>
@@ -228,6 +238,7 @@
 	            <div class="service-content">
 	            	<h3 class="h05">Chimie</h3>
 
+
 		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
 	         		</p>
 	            </div>
@@ -239,7 +250,7 @@
 			   	<span class="icon"><i class="icon-eye"></i></span>
 
 	            <div class="service-content">
-	            	<h3 class="h05">Optique</h3>
+	            	<h3 class="h05">Optics</h3>
 
 		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
 	        			</p>
@@ -252,7 +263,7 @@
 					<span class="icon"><i class="icon-terminal"></i></span>
 
 	            <div class="service-content">
-	            	<h3 class="h05">Programmation</h3>
+	            	<h3 class="h05">Programming</h3>
 
 		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
 	         		</p>
@@ -483,9 +494,13 @@
 
    </section> <!-- end testimonials -->
 
+	<!-- Testimonials Section
+    ================================================== -->
+   
 
 	<!-- stats
    ================================================== -->
+
    <section id="clients">
 
 		<div class="row animate-this">
@@ -509,6 +524,7 @@
 		</div> <!-- end row -->
 
    </section> <!-- end clients -->
+
 
 
 	<!-- contact
@@ -596,16 +612,16 @@
 
 	   		<div class="cinfo">
 	   			<h6>Email Us At</h6>
-	   			<p>
-	   				ef_amrouche@esi@esi.dz<br>
 
-				   </p>
+
+	   				<p>ef_amrouche@esi.dz<br></p>
+				   	    				   
 	   		</div> <!-- end cinfo -->
 
 	   		<div class="cinfo">
 	   			<h6>Call Us At</h6>
 	   			<p>
-	   				Phone: (+213) 662 765 762<br>
+	   				Phone: (+213) 673 630 214<br>
 				   	Mobile: (+213) 21 65 56 65<br>
 				     	Fax: (+213) 21 65 56 65
 				   </p>
